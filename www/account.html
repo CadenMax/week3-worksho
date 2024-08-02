@@ -1,0 +1,28 @@
+<!-- www/account.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Account Page</title>
+  <!-- Link to external CSS file -->
+  <link rel="stylesheet" href="/css/styles.css">
+  <script>
+    // Script to set user name dynamically
+    document.addEventListener('DOMContentLoaded', function () {
+      fetch('/get-user')
+        .then(response => response.json())
+        .then(data => {
+          if (data.user) {
+            document.getElementById('user-name').textContent = data.user.name;
+          }
+        });
+    });
+  </script>
+</head>
+<body>
+  <h1>Welcome <span id="user-name"></span></h1>
+  <p>This is your acount page</p>
+  <a href="/logout"><button>Logout</button></a>
+</body>
+</html>

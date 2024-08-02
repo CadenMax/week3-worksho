@@ -1,0 +1,65 @@
+/* public/css/styles.css */
+body {
+    background-color: #0B1719; /* Dark background color */
+    color: #F2B145; /* Highlight color for text */
+    font-family: Arial, sans-serif;
+    padding: 20px;
+  }
+  
+  form {
+    background-color: #F2B145; /* Form background color */
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 8px;
+    color: #0B1719; /* Dark text color for labels */
+  }
+  
+  input[type="text"],
+  input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #6DA04A; /* Success color for input border */
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: #dd9c34; /* Input background color */
+  }
+  
+  button {
+    background-color: #6DA04A; /* Success color for button */
+    color: #0B1719; /* Dark text color for button */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  button:hover {
+    background-color: #4C7A33; /* Darker success color for button hover */
+  }
+  
+  #errormsg {
+    color: #F2B145; /* Highlight color for error message text */
+    background-color: #0B1719; /* Dark background for error message */
+    border: 2px solid #F2B145; /* Highlight border for error message */
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  .hidemessage {
+    display: none;
+  }
+  
+  .showmessage {
+    display: block;
+  }
+  

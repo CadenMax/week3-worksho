@@ -1,0 +1,26 @@
+<!-- www/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <!-- Link to jQuery CDN -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- Link to external JavaScript file -->
+  <script src="/js/script.js" defer></script>
+  <!-- Link to external CSS file -->
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <form id="login-form">
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" required><br>
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required><br>
+    <button type="submit">Submit</button>
+  </form>
+
+  <div id="errormsg" class="hidemessage">User credentials do not match</div>
+</body>
+</html>
